@@ -80,7 +80,7 @@ html, body{
 /* .................. search section .................... */
 
 .search-section{
-    min-height: 50vh;
+    min-height: 40vh;
     width: 100%;
     background: rgb(206,236,245);background: linear-gradient(43deg, rgba(206,236,245,1) 31%, rgba(243,221,201,1) 100%);
     display: flex;
@@ -147,7 +147,7 @@ html, body{
   }
 
   .inputFields{
-    min-height: 22vh;
+    min-height: 18vh;
     width: 60%;
     max-width: 900px;
     display: flex;
@@ -205,7 +205,7 @@ html, body{
   .search-section .howItWorks{
     display: flex;
     gap: 10px;
-    margin-top: 50px;
+    margin-top: 30px;
     img{
         margin-top: -2px;
     };
