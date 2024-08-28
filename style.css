@@ -277,6 +277,36 @@ html, body{
 
 
 
+    /* --------------------Brand Stats---------------------- */
+
+    .brand-stats{
+      height: 120px;
+      width: 100%;
+      border-bottom: 1.5px solid rgba(0, 0, 0, 0.301);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 7vw;
+    }
+    .brand-stats .stats-box{
+      text-align: center;
+    }
+    .stats-box h2{
+      font-size: 35px;
+      color: #303030;
+      margin-bottom: 5px;
+      span{
+        font-family: "kaisei Decol", serif;
+          font-weight: 400;
+      }
+    }
+    .stats-box h2 span:nth-child(2){
+      color: #DD9F44;
+    }
+
+    /* --------------------Brand Stats End---------------------- */
+
+
     /* ------------------- Explore section ----------------------- */
 
     .explore{
@@ -326,6 +356,7 @@ html, body{
         max-width: 360px;
         flex-shrink: 0;
         border-radius: 20px;
+        min-height: 490px;
       }
   
       .cat-slider .swiper .swiper-slide img {
@@ -672,7 +703,7 @@ html, body{
       }
 
       .work{
-        height: 520px;
+        min-height: 460px;
         max-width: 1200px;
         width: 100%;
         display: flex;
@@ -1199,17 +1230,58 @@ html, body{
           .banner-section .text h6{
             font-size: 28px;
         }
+            /* --------------------Brand Stats---------------------- */
+
+    .brand-stats{
+      height: 120px;
+      width: 100%;
+      border-bottom: 1.5px solid rgba(0, 0, 0, 0.301);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4.5vw;
+    }
+    .brand-stats .stats-box{
+      text-align: center;
+    }
+    .stats-box h2{
+      font-size: 30px;
+      color: #303030;
+      margin-bottom: 5px;
+      span{
+        font-family: "kaisei Decol", serif;
+          font-weight: 400;
+      }
+      
+    }
+    .stats-box p{
+      font-size: 12px;
+    }
+    .stats-box h2 span:nth-child(2){
+      color: #DD9F44;
+    }
+
+    /* --------------------Brand Stats End---------------------- */
 
             /* ------------------- Explore section ----------------------- */
+            .explore{
+              min-height: 700px;
+              width: 100%;
+              padding:6vh 0;
+          }
             .explore-content{
                 width: 85%;
-                height: 100%;
+                min-height: 650px;
                 /* background-color: skyblue; */
                 margin: 0 auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+            }
+
+            .cat-slider-main{
+              min-height: 490px;
             }
 
             /* ------------------- Explore ends ----------------------- */
@@ -1270,7 +1342,9 @@ html, body{
                 left: 50%;
                 transform: translate(-50%,-50%);
             }
-
+            .about-content .work-slider {
+              height: 240px;
+          }
 
             /*------------------------ about ------------------------*/
 
@@ -1284,7 +1358,7 @@ html, body{
                 margin-top: 70px;
               }
             .story .story-wrapper{
-                min-height: 90vh;
+                min-height: 800px;
                 width: 90%;
                 height: 90vh;
                 margin: 0 auto;
