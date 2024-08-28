@@ -43,7 +43,7 @@ categoryItems.forEach((item, index) => {
     const menuPosition = document.querySelector('.category-menu').getBoundingClientRect();
     
     
-    const leftPosition = itemPosition.left - menuPosition.left + 30;
+    const leftPosition = itemPosition.left - menuPosition.left + 5;
     const itemWidth = item.offsetWidth;
     
     underline.style.left = `${leftPosition}px`;
@@ -54,8 +54,9 @@ categoryItems.forEach((item, index) => {
 const initialActiveItem = document.querySelector('.category-item.active');
 if (initialActiveItem) {
   const initialPosition = initialActiveItem.getBoundingClientRect();
-  const initialLeft = initialPosition.left - document.querySelector('.category-menu').getBoundingClientRect().left + 30;
+  const initialLeft = initialPosition.left - document.querySelector('.category-menu').getBoundingClientRect().left + 10;
   underline.style.left = `${initialLeft}px`;
-  underline.style.width = `${initialActiveItem.offsetWidth}px`;
+  // underline.style.width = `${initialActiveItem.offsetWidth}px`;
+  // underline.style.width = `${initialActiveItem.offsetWidth}px`;
 }
 
