@@ -87,6 +87,8 @@ html, body{
 
 
 
+
+
 /* .................. search section .................... */
 
 .search-section{
@@ -663,7 +665,7 @@ input[type=range]::-moz-range-thumb {
   .productContent .wrapper .filter{
     position: absolute;
     min-width: 260px;
-    height: 105vh;
+    min-height: 80vh;
     overflow-y: scroll;
     display: none;
     transition: all ease-in-out 0.2s;
