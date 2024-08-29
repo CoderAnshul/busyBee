@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <div class="navbar">
+    <img class="small" src="images/Logo.png" alt="">
+    <div class="center-nav">
+        <ul>
+            <a href="index.html"><li class="" data-page="home">Home</li></a>
+            <a href="Product.html"><li class="" data-page="product">Product</li></a>
+            <a href=""><li class="" data-page="blog">Blog</li></a>
+            <a href=""><li class="" data-page="about">About us</li></a>
+        </ul>
+        <img src="images/Logo.png" alt="">
+        <ul>
+            <a href=""><li class="" data-page="reviews">Reviews</li></a>
+            <a href=""><li class="" data-page="blog2">Blog</li></a>
+            <a href=""><li class="" data-page="faqs">FAQ's</li></a>
+            <a href=""><li class="" data-page="contact">Contact Us</li></a>
+        </ul>
+    </div>
+    <div id="toggle" style="display: flex; justify-content: space-between; gap: 40px;">
+        <div class="nav-end">
+            <img src="images/heart.png" alt="">
+            <img src="images/user.png" alt="">
+            <img src="images/shopping-cart.png" alt="">
+        </div>
+        <img src="images/ham.png" alt="" class="ham">
+    </div>
+</div>
+
+
+    <div class="search-section">
+        <div class="category-menu">
+            <div class="category-item active" data-category="caps">
+              <img src="images/one.png" alt="Caps Icon">
+              <span>CAPS</span>
+            </div>
+            <div class="category-item" data-category="shirts">
+              <img src="images/two.png" alt="Shirts Icon">
+              <span>SHIRTS</span>
+            </div>
+            <div class="category-item" data-category="polo">
+              <img src="images/three.png" alt="Polo Icon">
+              <span>POLO</span>
+            </div>
+            <div class="category-item" data-category="jackets">
+              <img src="images/four.png" alt="Jackets Icon">
+              <span>JACKETS</span>
+            </div>
+            <div class="category-item" data-category="bags">
+              <img src="images/five.png" alt="Bags Icon">
+              <span>BAGS</span>
+            </div>
+            <div class="underline"></div>
+          </div>
+
+          <div class="inputFields">
+            <div class="inputs">
+               <div class="first">
+                <select name="fit" id="fit">
+                    <option value="">Select fit</option>
+                    <option value="s">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                  </select>
+                  <select name="fit" id="fit">
+                    <option value="">Bill Type</option>
+                    <option value="s">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                  </select>
+               </div>
+               <div class="second">
+                <select name="fit" id="fit">
+                    <option value="">Choose Your Style</option>
+                    <option value="s">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                  </select>
+                  <select name="fit" id="fit">
+                    <option value="">Search by Color</option>
+                    <option value="s">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                  </select>
+               </div>
+            </div>
+            <button><img src="images/search.png" alt=""> <br>Show me recommendations</button>
+          </div>
+
+          <div class="howItWorks">Not sure where to start? <img src="images/howItWorks.png" alt=""></div>
+    </div>
+
+    <div class="productList">
+        <div class="productContent">
+            <div class="top-section">
+                <div class="filterToggle"><img src="images/filter.png" alt="">FILTERS</div>
+                <div>Results <span>Products</span></div>
+                <div>SORT BY 
+                    <select name="pets" id="pet-select">
+                      <option value="dog">Best Match</option>
+                      <option value="cat">Most Popular</option>
+                      <option value="hamster">Best Rated</option>
+                      <option value="parrot">Low to High</option>
+                      <option value="spider">High to Low</option>
+                      <option value="goldfish">Best Match</option>
+                    </select>
+                </div>
+            </div>
+            <div class="wrapper">
+
+              <div class="filter">
+                <h2 class="cat">Category</h2>
+                <ul class="left-menu theme1">
+                  <li id="heading"><a><span>Caps</span> <span>+</span></a>
+                    <ul class="menu-opt">
+                      <li><input type="checkbox" name="" id="">5 panel High
+                      </li>	
+                      <li><input type="checkbox" name="" id="">6 panel High
+                      </li>	
+                      <li><input type="checkbox" name="" id="">5 panel High
+                      </li>	
+                      <li><input type="checkbox" name="" id="">5 panel High
+                      </li>	
+                    </ul>
+                  </li>	
+                  <li id="heading"><a><span>T-shirts</span> <span>+</span></a>
+                    <ul class="menu-opt">
+                      <li><input type="checkbox" name="" id="">5 panel High
+                      </li>	
+                      <li><input type="checkbox" name="" id="">6 panel High
+                      </li>	
+                      <li><input type="checkbox" name="" id="">5 panel High
+                      </li>	
+                      <li><input type="checkbox" name="" id="">5 panel High
+                      </li>	
+                    </ul>
+                  </li>	
+                  <li id="heading"><a><span>Polos</span> <span>+</span></a>
+                    <ul class="menu-opt">
+                      <li><input type="checkbox" name="" id="">5 panel High
+                      </li>	
+                      <li><input type="checkbox" name="" id="">6 panel High
+                      </li>	
+                      <li><input type="checkbox" name="" id="">5 panel High
+                      </li>	
+                      <li><input type="checkbox" name="" id="">5 panel High
+                      </li>	
+                    </ul>
+                  </li>	
+                  <li id="heading"><a><span>Jackets</span> <span>+</span></a>
+                    <ul class="menu-opt">
+                      <li><input type="checkbox" name="" id="">5 panel High
+                      </li>	
+                      <li><input type="checkbox" name="" id="">6 panel High
+                      </li>	
+                      <li><input type="checkbox" name="" id="">5 panel High
+                      </li>	
+                      <li><input type="checkbox" name="" id="">5 panel High
+                      </li>	
+                    </ul>
+                  </li>	
+                  <li id="heading"><a><span>Bags</span> <span>+</span></a>
+                    <ul class="menu-opt">
+                      <li><input type="checkbox" name="" id="">5 panel High
+                      </li>	
+                      <li><input type="checkbox" name="" id="">6 panel High
+                      </li>	
+                      <li><input type="checkbox" name="" id="">5 panel High
+                      </li>	
+                      <li><input type="checkbox" name="" id="">5 panel High
+                      </li>	
+                    </ul>
+                  </li>	
+                </ul>
+
+
+                <h2 class="cat" style="margin-top: 40px;">Price Range</h2>
+                <div class="range-slider">
+                  <input type="range" min="50" max="100" value="50" id="minRange" />
+                  <input type="range" min="50" max="100" value="100" id="maxRange" />
+                  <div class="slider-track"></div>
+                  <div class="price-range">
+                    <span id="rangeMinValue">$50.00</span> - <span id="rangeMaxValue">$100.00</span>
+                  </div>
+                </div>
+
+                <h2 class="cat" style="margin-top: 40px;">Price Range</h2>
+                <div class="checks">
+                  <ul>
+                    <li><span><input type="checkbox" name="" id="">Rareform</span> <span>120</span></li>
+                    <li><span><input type="checkbox" name="" id="">Native Union</span> <span>80</span></li>
+                    <li><span><input type="checkbox" name="" id="">Chicka-d</span> <span>55</span></li>
+                    <li><span><input type="checkbox" name="" id="">Tasc</span> <span>40</span></li>
+                    <li><span><input type="checkbox" name="" id="">Glyder</span> <span>28</span></li>
+                    <li><span><input type="checkbox" name="" id="">Outdoor Cap</span> <span>28</span></li>
+                    <li><span><input type="checkbox" name="" id="">Black+Blum</span> <span>80</span></li>
+                    <li><span><input type="checkbox" name="" id="">HUK</span> <span>28</span></li>
+                    <li><span><input type="checkbox" name="" id="">Built</span> <span>55</span></li>
+                    <li><span><input type="checkbox" name="" id="">Goofy Group</span> <span>28</span></li>
+                  </ul>
+                  <h4 class="seeMore">More+</h4>
+                </div>
+              </div>
+
+              <div class="product-section">
+              </div>
+
+              
+            </div>
+            
+
+
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">&raquo;</button>
+            </div>            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const categoryItems = document.querySelectorAll('.category-item');
+        const underline = document.querySelector('.underline');
+
+        categoryItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            categoryItems.forEach(cat => cat.classList.remove('active'));
+            
+            item.classList.add('active');
+            
+            const itemPosition = item.getBoundingClientRect();
+            const menuPosition = document.querySelector('.category-menu').getBoundingClientRect();
+            
+            
+            const leftPosition = itemPosition.left - menuPosition.left + 5;
+            const itemWidth = item.offsetWidth;
+            
+            underline.style.left = `${leftPosition}px`;
+            underline.style.width = `${itemWidth}px`;
+        });
+        });
+
+        const initialActiveItem = document.querySelector('.category-item.active');
+        if (initialActiveItem) {
+        const initialPosition = initialActiveItem.getBoundingClientRect();
+        const initialLeft = initialPosition.left - document.querySelector('.category-menu').getBoundingClientRect().left + 10;
+        underline.style.left = `${initialLeft}px`;
+        // underline.style.width = `${initialActiveItem.offsetWidth}px`;
+        // underline.style.width = `${initialActiveItem.offsetWidth}px`;
+        }
+    </script>
+    <script>
+      document.querySelector('.filterToggle').addEventListener('click', function() {
+    var filterDiv = document.querySelector('.filter');
+    
+    if (filterDiv.style.display === 'none' || filterDiv.style.display === '') {
+        filterDiv.style.display = 'block';
+    } else {
+        filterDiv.style.display = 'none';
+    }
+});
+
+    </script>
+    <script src="product.js"></script>
+</body>
+</html>

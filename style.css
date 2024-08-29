@@ -7,7 +7,14 @@
 ::-webkit-scrollbar{
     display: none;
 }
-
+a{
+  text-decoration: none;
+}
+.navActive{
+  border: 1.5px solid #D07531;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
 
 ul, li{
     text-decoration: none;
