@@ -11,6 +11,9 @@
 a{
   text-decoration: none;
 }
+a, li {
+  -webkit-tap-highlight-color: transparent;
+}
 
 
 ul, li{
@@ -297,6 +300,7 @@ html, body{
   display: none;
   transition: all ease-in-out 0.2s;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 ul.left-menu a:link,
@@ -653,6 +657,9 @@ input[type=range]::-moz-range-thumb {
 
 
 @media(max-width:480px){
+  a, li {
+    -webkit-tap-highlight-color: transparent;
+}
   .productContent .wrapper .filter{
     position: absolute;
     min-width: 260px;
@@ -663,6 +670,7 @@ input[type=range]::-moz-range-thumb {
     z-index: 99;
     background-color: #fff;
     box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.1);
+    -webkit-tap-highlight-color: transparent;
   }
     .navbar{
         align-items: center;
