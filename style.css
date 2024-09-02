@@ -362,8 +362,9 @@ html, body{
         background: #fff;
         max-width: 360px;
         flex-shrink: 0;
+        padding: 0 0 10px 0;
         border-radius: 20px;
-        min-height: 490px;
+        min-height: 485px;
       }
   
       .cat-slider .swiper .swiper-slide img {
