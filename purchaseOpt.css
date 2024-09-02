@@ -92,6 +92,7 @@ html, body{
     min-height: 50vh;
     margin-bottom: 40px;
     padding-top: 20px;
+        background-color: #EAEAEA;
 }
 .tab-container {
     width: 75%;
