@@ -663,9 +663,10 @@ input[type=range]::-moz-range-thumb {
   a, li {
     -webkit-tap-highlight-color: transparent;
 }
-.filter {
-  display: none!important; /* Show filter on larger screens */
-}
+/* .filter {
+  z-index: 99;
+  display: none!important; 
+} */
   .productContent .wrapper .filter{
     position: absolute;
     min-width: 260px;

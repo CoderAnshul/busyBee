@@ -18,7 +18,7 @@
                 <a href="index.html"><li class="" data-page="home">Home</li></a>
                 <a href="Product.html"><li class="" data-page="product">Product</li></a>
                 <a href=""><li class="" data-page="blog">Blog</li></a>
-                <a href=""><li class="" data-page="about">About us</li></a>
+                <a href="aboutus.html"><li class="" data-page="about">About us</li></a>
             </ul>
             <img src="images/Logo.png" alt="">
             <ul>
@@ -30,6 +30,7 @@
         </div>
         <div id="toggle" style="display: flex; justify-content: space-between; gap: 40px;">
             <div class="nav-end">
+                <img src="images/searchNav.png" alt="">
                 <img src="images/heart.png" alt="">
                 <img src="images/user.png" alt="">
                 <img src="images/shopping-cart.png" alt="">
@@ -83,42 +84,59 @@
                         <div class="accordion-content">
                             <div class="accorTop">
                                 <div class="select-quantity">
-                                    <h5>Total Items Price</h5>
+                                    <h5>Items Price Calculator</h5>
                                     <div class="quantityBox">
-                                        <div class="quantity">
-                                            <h5>1</h5>
-                                            <h4>$20</h4>
+                                        <div class="optFilter">
+
+                                            <div style="display: flex;flex-wrap: wrap; gap:8px; margin-bottom: 10px;">
+                                                <div class="quantity-container QuanCont">
+                                                    <span class="quantity-label">Quantity</span>
+                                                    <div class="quantity-controls">
+                                                        <button class="quantity-btn minus-btn">−</button>
+                                                        <input type="text" class="quantity-input" value="1" readonly>
+                                                        <button class="quantity-btn plus-btn">+</button>
+                                                    </div>
+                                                </div>
+                                                <!-- ----------------------- -->
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>No Back Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div style="display: flex;flex-wrap: wrap; gap:8px">
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>Standard Flat Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                                <!-- ----------------------- -->
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>No Back Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
-                                        <div class="quantity">
-                                            <h5>12</h5>
-                                            <h4>$19</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>24</h5>
-                                            <h4>$19</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>48</h5>
-                                            <h4>$17</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>96</h5>
-                                            <h4>$16</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>144</h5>
-                                            <h4>$14</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>288</h5>
-                                            <h4>$13</h4>
+                                        <div class="estPrice">
+                                            <p>Estimated Price</p>
+                                            <h3>$19/ <span>per cap</span></h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="points">
                                     <ul>
-                                        <li>Add 4 more items to save $1 per item</li>
-                                        <li>everyone's favorite trucker hat.</li>
+                                        <li>Add more items to save up-to $5 per item.</li>
                                         <li>Price includes decoration.</li>
                                     </ul>
                                 </div>
@@ -199,46 +217,61 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="accordion-toggle"><h4>Original 6277 <span>Fitted</span></h4></button>
+                        <!-- <button class="accordion-toggle"><h4>Original 6277 <span>Fitted</span></h4></button>
                         <div class="accordion-content">
                             <div class="accorTop">
                                 <div class="select-quantity">
-                                    <h5>Total Items Price</h5>
+                                    <h5>Items Price Calculator</h5>
                                     <div class="quantityBox">
-                                        <div class="quantity">
-                                            <h5>1</h5>
-                                            <h4>$20</h4>
+                                        <div class="optFilter">
+
+                                            <div style="display: flex;flex-wrap: wrap; gap:8px; margin-bottom: 10px;">
+                                                <div class="quantity-container QuanCont">
+                                                    <span class="quantity-label">Quantity</span>
+                                                    <div class="quantity-controls">
+                                                        <button class="quantity-btn minus-btn">−</button>
+                                                        <input type="text" class="quantity-input" value="1" readonly>
+                                                        <button class="quantity-btn plus-btn">+</button>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>No Back Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div style="display: flex;flex-wrap: wrap; gap:8px">
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>Standard Flat Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>No Back Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
-                                        <div class="quantity">
-                                            <h5>12</h5>
-                                            <h4>$19</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>24</h5>
-                                            <h4>$19</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>48</h5>
-                                            <h4>$17</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>96</h5>
-                                            <h4>$16</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>144</h5>
-                                            <h4>$14</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>288</h5>
-                                            <h4>$13</h4>
+                                        <div class="estPrice">
+                                            <p>Estimated Price</p>
+                                            <h3>$19/ <span>per cap</span></h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="points">
                                     <ul>
-                                        <li>Add 4 more items to save $1 per item</li>
-                                        <li>everyone's favorite trucker hat.</li>
+                                        <li>Add more items to save up-to $5 per item.</li>
                                         <li>Price includes decoration.</li>
                                     </ul>
                                 </div>
@@ -323,42 +356,57 @@
                         <div class="accordion-content">
                             <div class="accorTop">
                                 <div class="select-quantity">
-                                    <h5>Total Items Price</h5>
+                                    <h5>Items Price Calculator</h5>
                                     <div class="quantityBox">
-                                        <div class="quantity">
-                                            <h5>1</h5>
-                                            <h4>$20</h4>
+                                        <div class="optFilter">
+
+                                            <div style="display: flex;flex-wrap: wrap; gap:8px; margin-bottom: 10px;">
+                                                <div class="quantity-container QuanCont">
+                                                    <span class="quantity-label">Quantity</span>
+                                                    <div class="quantity-controls">
+                                                        <button class="quantity-btn minus-btn">−</button>
+                                                        <input type="text" class="quantity-input" value="1" readonly>
+                                                        <button class="quantity-btn plus-btn">+</button>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>No Back Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div style="display: flex;flex-wrap: wrap; gap:8px">
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>Standard Flat Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>No Back Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
-                                        <div class="quantity">
-                                            <h5>12</h5>
-                                            <h4>$19</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>24</h5>
-                                            <h4>$19</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>48</h5>
-                                            <h4>$17</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>96</h5>
-                                            <h4>$16</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>144</h5>
-                                            <h4>$14</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>288</h5>
-                                            <h4>$13</h4>
+                                        <div class="estPrice">
+                                            <p>Estimated Price</p>
+                                            <h3>$19/ <span>per cap</span></h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="points">
                                     <ul>
-                                        <li>Add 4 more items to save $1 per item</li>
-                                        <li>everyone's favorite trucker hat.</li>
+                                        <li>Add more items to save up-to $5 per item.</li>
                                         <li>Price includes decoration.</li>
                                     </ul>
                                 </div>
@@ -443,42 +491,57 @@
                         <div class="accordion-content">
                             <div class="accorTop">
                                 <div class="select-quantity">
-                                    <h5>Total Items Price</h5>
+                                    <h5>Items Price Calculator</h5>
                                     <div class="quantityBox">
-                                        <div class="quantity">
-                                            <h5>1</h5>
-                                            <h4>$20</h4>
+                                        <div class="optFilter">
+
+                                            <div style="display: flex;flex-wrap: wrap; gap:8px; margin-bottom: 10px;">
+                                                <div class="quantity-container QuanCont">
+                                                    <span class="quantity-label">Quantity</span>
+                                                    <div class="quantity-controls">
+                                                        <button class="quantity-btn minus-btn">−</button>
+                                                        <input type="text" class="quantity-input" value="1" readonly>
+                                                        <button class="quantity-btn plus-btn">+</button>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>No Back Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div style="display: flex;flex-wrap: wrap; gap:8px">
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>Standard Flat Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>No Back Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
-                                        <div class="quantity">
-                                            <h5>12</h5>
-                                            <h4>$19</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>24</h5>
-                                            <h4>$19</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>48</h5>
-                                            <h4>$17</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>96</h5>
-                                            <h4>$16</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>144</h5>
-                                            <h4>$14</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>288</h5>
-                                            <h4>$13</h4>
+                                        <div class="estPrice">
+                                            <p>Estimated Price</p>
+                                            <h3>$19/ <span>per cap</span></h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="points">
                                     <ul>
-                                        <li>Add 4 more items to save $1 per item</li>
-                                        <li>everyone's favorite trucker hat.</li>
+                                        <li>Add more items to save up-to $5 per item.</li>
                                         <li>Price includes decoration.</li>
                                     </ul>
                                 </div>
@@ -563,42 +626,58 @@
                         <div class="accordion-content">
                             <div class="accorTop">
                                 <div class="select-quantity">
-                                    <h5>Total Items Price</h5>
+                                    <h5>Items Price Calculator</h5>
                                     <div class="quantityBox">
-                                        <div class="quantity">
-                                            <h5>1</h5>
-                                            <h4>$20</h4>
+                                        <div class="optFilter">
+
+                                            <div style="display: flex;flex-wrap: wrap; gap:8px; margin-bottom: 10px;">
+                                                <div class="quantity-container QuanCont">
+                                                    <span class="quantity-label">Quantity</span>
+                                                    <div class="quantity-controls">
+                                                        <button class="quantity-btn minus-btn">−</button>
+                                                        <input type="text" class="quantity-input" value="1" readonly>
+                                                        <button class="quantity-btn plus-btn">+</button>
+                                                    </div>
+                                                </div>
+                                               
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>No Back Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div style="display: flex;flex-wrap: wrap; gap:8px">
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>Standard Flat Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>No Back Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
-                                        <div class="quantity">
-                                            <h5>12</h5>
-                                            <h4>$19</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>24</h5>
-                                            <h4>$19</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>48</h5>
-                                            <h4>$17</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>96</h5>
-                                            <h4>$16</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>144</h5>
-                                            <h4>$14</h4>
-                                        </div>
-                                        <div class="quantity">
-                                            <h5>288</h5>
-                                            <h4>$13</h4>
+                                        <div class="estPrice">
+                                            <p>Estimated Price</p>
+                                            <h3>$19/ <span>per cap</span></h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="points">
                                     <ul>
-                                        <li>Add 4 more items to save $1 per item</li>
-                                        <li>everyone's favorite trucker hat.</li>
+                                        <li>Add more items to save up-to $5 per item.</li>
                                         <li>Price includes decoration.</li>
                                     </ul>
                                 </div>
@@ -678,12 +757,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                     <div id="artwork" class="content">Content for Artwork</div>
                     <div id="checkout" class="content">Content for Checkout</div>
                 </div>
+                <button id="next">NEXT STEP</button>
             </div>
         </div>
         <div class="relatedProd">

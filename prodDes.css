@@ -243,14 +243,14 @@ html, body{
     height: 16px;
 }
 .prodDesBtn:nth-child(1){
-    background-color: black;
+    background-color: #DD9F44;
     color: white;
     white-space: nowrap;
 }
 .prodDesBtn:nth-child(2){
     background-color: transparent;
     color: #000;
-    border: 1.5px solid #000000b7;
+    border: 1.5px solid #DD9F44;
 
 }
 
@@ -301,7 +301,9 @@ html, body{
 }
 .tab-content {
     margin-top: 20px;
-    width: 100%;
+    width: 68%;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 .content {
     display: none;
@@ -309,241 +311,49 @@ html, body{
 .content.active {
     display: block;
 }
-.tab-content .content.active:nth-child(1) {
+.pointers {
     display: flex;
-    gap: 30px;
+    gap: 50px;
+    padding: 25px 5px;
 }
-.tab-content .content:nth-child(1) .itemTypeBox {
-    height: 260px;
-    min-height: 320px;
-    min-width: 250px;
-    width: 220px;
-    background-color: transparent;
-    padding: 20px;
-    position: relative;
-    border: 1.5px solid rgba(0, 0, 0, 0.226);
-    border-radius: 12px;
-    margin: 10px;
-    transition: border-color 0.2s ease-in-out;
-}
-.hoverSelect{
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translate(-50%,0);
-    padding: 1px 10px;
-    background: #f4a259;
-    color: white;
-    border-radius: 20px;
-    font-size: 12px;
-    z-index: 9;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
 
+.column {
+    flex: 1;
 }
-.itemTypeBox:hover{
-    border:1.5px solid rgba(0, 0, 0, 1)!important;
-    transition: border-color 0.2s ease-in-out;
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
-.itemTypeBox:hover .hoverSelect{
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
-}
-.tab-content .content .itemTypeBox .imageBox {
-    height: 60%;
-    width: 100%;
-}
-.tab-content .content .itemTypeBox .imageBox img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    transform: scale(1.2);
-}
-.tab-content .content .itemTypeBox .textCont {
-    height: 40%;
-    width: 100%;
-    text-align: center;
-}
-.tab-content .content .itemTypeBox .textCont h4 {
-    margin-top: 20px;
-    font-size: 20px;
-}
-.tab-content .content .itemTypeBox .textCont h4 span {
-    font-family: "kaisei Decol", serif;
-    font-weight: 400;
-}
-.tab-content .content .itemTypeBox .textCont p {
-    margin-top: 15px;
-    font-size: 14px;
-    width: 100%;
+
+li {
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 
 
-/* -----------tab items section--------------- */
-.accordion-toggle {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 14px;
-    margin: 10px 0;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    h4{
-        color: #303030;
-        font-size: 28px;
-        font-weight: 600;
-    }
-    span{
-        font-family: "kaisei Decol", serif;
-        font-weight: 200;
-    }
-}
 
-.faqactive,
-.accordion-toggle:hover {
-    background-color: white;
-}
 
-.accordion-toggle:after {
-    content: '\002B'; /* Plus sign */
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
 
-.faqactive:after {
-    content: "\2212"; /* Minus sign */
-}
 
-.accordion-content {
-    /* background-color: white; */
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
 
-.accorTop {
-    display: flex;
-    gap: 4vw;
-    padding: 30px 20px;
-    align-items: center; 
-    background: #F6F6F6;
-    flex-wrap: wrap;
-}
 
-.accorTop .points{
-    margin-top: 20px;
-}
-.accorTop .points ul li{
-    font-size: 12px;
-}
 
-.quantityBox {
-    display: flex;
-    gap: 8px;
-    margin-top: 10px;
-}
 
-.accorTop .quantity {
-    padding: 5px 10px;
-    border: 1.5px solid rgba(0, 0, 0, 0.445);
-    text-align: center;
-    border-radius: 6px;
-    transition: all ease-in-out 0.2s;
-    h5{
-        font-weight: 400;
-        font-size: 12px;
-        margin-bottom: 5px;
-    }
-}
-.quantity:hover{
-    background: #D07531;
-    color: white;
-}
 
-.accorBottom{
-    margin-top: 20px;
-    display: flex;
-    gap: 2vw;
-    padding: 30px 20px;
-    align-items: center; 
-    flex-wrap: wrap;
-    justify-content: center;
-    /* overflow-y: scroll; */
-}
-.accorBottom .accorBox{
-    height: 150px;
-    min-width: 220px;
-    border: 1.5px solid rgba(0, 0, 0, 0.288);
-    border-radius: 12px;
-    display: flex;
-    flex-shrink: 0;
-}
-.accorBox:hover{
-    border-color: #764D2A;
-}
-.accorBoxLeft{
-    width: 50%;
-    height: 100%;
-}
-.accorBoxLeft img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    scale: 0.9;
-}
-.accorBoxRight{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    h4{
-        font-weight: 500;
-    }
-    p{
-        font-size: 12px;
-    }
-}
-.counter {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f3f3f3;
-    padding: 2px 10px;
-    border-radius: 10px;
-    width: 120px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-}
 
-.counter-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #555;
-    padding: 0 10px;
-}
 
-.counter-value {
-    font-size: 18px;
-    color: #333;
-    min-width: 30px;
-    text-align: center;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -962,20 +772,8 @@ html, body{
         min-height: 400px;
         margin-bottom: 40px;
     }
-    .x-scroll{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        gap: 20px;
-        overflow-x: scroll;
-        justify-content: start;
-    }
     /* ------------------------------------------------------- */
-    .accordion-toggle {
-        h4{
-            font-size: 22px;
-        }
-    }
+   
     .tab-container {
         width: 100%;
         margin: 0 auto;
@@ -991,30 +789,11 @@ html, body{
         width: 90%;
     margin: 0 auto;
     }
-    .select-quantity .quantityBox{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .accorTop .points{
+    .tab-content {
         margin-top: 20px;
-        margin-left: 14px;
-    }
-
-
-
-    .accorBottom{
-        margin-top: 5px;
-        padding: 5px 0px;
-        /* overflow-y: scroll; */
-    }
-    .accorBottom .accorBox{
-        height: 150px;
-        width: 100%;
-        min-width: 260px;
-        border: 1.5px solid rgba(0, 0, 0, 0.288);
-        border-radius: 12px;
-        display: flex;
-        flex-shrink: 0;
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 30px;
     }
     /* ----------------tab section ------------------- */
     .relatedProd{
@@ -1192,20 +971,8 @@ html, body{
         min-height: 400px;
         margin-bottom: 40px;
     }
-    .x-scroll{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        gap: 20px;
-        overflow-x: scroll;
-        justify-content: start;
-    }
     /* ------------------------------------------------------- */
-    .accordion-toggle {
-        h4{
-            font-size: 22px;
-        }
-    }
+   
     .tab-container {
         width: 100%;
         margin: 0 auto;
@@ -1221,30 +988,11 @@ html, body{
         width: 90%;
     margin: 0 auto;
     }
-    .select-quantity .quantityBox{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .accorTop .points{
+    .tab-content {
         margin-top: 20px;
-        margin-left: 14px;
-    }
-
-
-
-    .accorBottom{
-        margin-top: 5px;
-        padding: 5px 0px;
-        /* overflow-y: scroll; */
-    }
-    .accorBottom .accorBox{
-        height: 150px;
-        width: 280px;
-        min-width: 260px;
-        border: 1.5px solid rgba(0, 0, 0, 0.288);
-        border-radius: 12px;
-        display: flex;
-        flex-shrink: 1;
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 30px;
     }
     /* ----------------tab section ------------------- */
     .relatedProd{
@@ -1419,20 +1167,8 @@ html, body{
         min-height: 400px;
         margin-bottom: 40px;
     }
-    .x-scroll{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        gap: 20px;
-        overflow-x: scroll;
-        justify-content: start;
-    }
     /* ------------------------------------------------------- */
-    .accordion-toggle {
-        h4{
-            font-size: 22px;
-        }
-    }
+    
     .tab-container {
         width: 100%;
         margin: 0 auto;
@@ -1448,31 +1184,16 @@ html, body{
         width: 90%;
     margin: 0 auto;
     }
-    .select-quantity .quantityBox{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .accorTop .points{
+    .tab-content {
         margin-top: 20px;
-        margin-left: 14px;
+        width: 88%;
+        margin: 0 auto;
+        margin-top: 30px;
     }
 
 
 
-    .accorBottom{
-        margin-top: 5px;
-        padding: 5px 0px;
-        /* overflow-y: scroll; */
-    }
-    /* .accorBottom .accorBox{
-        height: 150px;
-        width: 100%;
-        min-width: 260px;
-        border: 1.5px solid rgba(0, 0, 0, 0.288);
-        border-radius: 12px;
-        display: flex;
-        flex-shrink: 0;
-    } */
+    
     /* ----------------tab section ------------------- */
     .relatedProd{
         min-height:400px;

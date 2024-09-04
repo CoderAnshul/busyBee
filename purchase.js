@@ -84,3 +84,25 @@ itemTypeBoxes.forEach((box) => {
         this.classList.add('selected');
     });
 });
+
+
+// plus minus------------------------
+const minusBtn = document.querySelector('.minus-btn');
+const plusBtn = document.querySelector('.plus-btn');
+const quantityInput = document.querySelector('.quantity-input');
+
+
+minusBtn.addEventListener('click', () => {
+    let currentValue = parseInt(quantityInput.value, 10);
+    if (currentValue > 1) {
+        quantityInput.value = currentValue - 1;
+    }
+});
+
+
+plusBtn.addEventListener('click', () => {
+    let currentValue = parseInt(quantityInput.value, 10);
+    quantityInput.value = currentValue + 1;
+});
+
+// plus minus------------------------
