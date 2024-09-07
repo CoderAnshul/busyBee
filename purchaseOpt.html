@@ -119,7 +119,7 @@
                                                 <!-- ----------------------- -->
                                                 <div class="custom-select">
                                                     <select>
-                                                        <option>No Back Embroidery</option>
+                                                        <option>No side Embroidery</option>
                                                         <option>Option 1</option>
                                                         <option>Option 2</option>
                                                         <option>Option 3</option>
@@ -760,7 +760,466 @@
                         </div> -->
 
                     </div>
-                    <div id="artwork" class="content">Content for Artwork</div>
+                    <div id="artwork" class="content">
+                        <button class="accordion-toggle"><h4><img src="images/uploadImg.png" alt="uploadImg">Upload <span>Your Logo</span></h4></button>
+                        <div class="accordion-content">
+                            <div class="uploadTop">
+                                <div class="uploadLeft">
+                                    <div class="radio-group">
+                                        <label class="radio-container">
+                                            <input type="radio" name="order" value="previous" id="previousRadio">
+                                            <span class="checkmark"></span>
+                                            I Have Ordered With This Logo Before
+                                        </label>
+                                        <label class="radio-container">
+                                            <input type="radio" name="order" value="first-time" id="firstTimeRadio" checked>
+                                            <span class="checkmark checked"></span>
+                                            This Is My First Time Ordering
+                                        </label>
+                                    </div>
+                            
+                                    <div class="uploadCont">
+                                        <div class="contentOne" id="contentOne">
+                                            <div class="uploadTextWrapper">
+                                                <h3>Upload Your Logo</h3>
+                                                <ul>
+                                                    <li>Any image of your logo will work (even a screen shot or photo). We redraw and recreate all designs during artwork setup.</li>
+                                                    <li>Every logo must be hand converted by one of our designers into a new file that works for our machines.</li>
+                                                    <li>We test and tweak every logo until the output meets or exceeds our very high quality standards.</li>
+                                                    <li>We keep your artwork on file for all future orders.</li>
+                                                    <li>Upload file size should be max 5MB and we support file formats like .jpg, .png, .svg, .eps, .ai etc...</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="contentTwo" id="contentTwo">
+                                            <div class="container">
+                                                <h2>Choose Your Logo</h2>
+                                                <div class="logo-wrapper">
+                                                    <!-- Logo 1 -->
+                                                    <div class="logo-container" onclick="selectLogo(this)">
+                                                        <img src="images/uploadLogo.png" alt="Logo 1" class="inactive-logo">
+                                                    </div>
+                                                    <!-- Logo 2 -->
+                                                    <div class="logo-container" onclick="selectLogo(this)">
+                                                        <img src="images/uploadLogo.png" alt="Logo 2">
+                                                    </div>
+                                                    <!-- Logo 3 -->
+                                                    <div class="logo-container" onclick="selectLogo(this)">
+                                                        <img src="images/uploadLogo.png" alt="Logo 3" class="inactive-logo">
+                                                    </div>
+                                                    <!-- Logo 4 -->
+                                                    <div class="logo-container" onclick="selectLogo(this)">
+                                                        <img src="images/uploadLogo.png" alt="Logo 4" class="inactive-logo">
+                                                    </div>
+                                                    <!-- Drag and drop -->
+                                                    <div class="logo-container" id="drop-area">
+                                                        <span class="drag-text">Drag and drop here</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="file-upload-container">
+                                        <label class="file-upload-button">
+                                            <input type="file" id="logo-upload" hidden>
+                                            UPLOAD YOUR LOGO
+                                        </label>
+                                        <span class="file-name">No File Selected</span>
+                                    </div>
+                            
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" checked>
+                                            <span class="checkmark"></span>
+                                            I own the rights to the artwork being used or have permission from the owner to use it
+                                        </label>
+                                    </div>
+                                </div>
+                            
+                                <div class="uploadRight" id="uploadRight">
+                                    <img src="images/uploadLogo.png" alt="">
+                                </div>
+                            </div>
+                            
+
+                        </div>
+
+
+                        <button class="accordion-toggle"><h4><img src="images/bird.png" alt="bird">Embroidery <span>Options</span></h4></button>
+                        <div class="accordion-content">
+                            <div class="accorTop">
+                                <div class="select-quantity">
+                                    <h5>Items Price Calculator</h5>
+                                    <div class="quantityBox">
+                                        <div class="optFilter">
+
+                                            <div style="display: flex;flex-wrap: wrap; gap:8px; margin-bottom: 10px;">
+                                                <div class="quantity-container QuanCont">
+                                                    <span class="quantity-label">Quantity</span>
+                                                    <div class="quantity-controls">
+                                                        <button class="quantity-btn minus-btn">−</button>
+                                                        <input type="text" class="quantity-input" value="1" readonly>
+                                                        <button class="quantity-btn plus-btn">+</button>
+                                                    </div>
+                                                </div>
+                                                <!-- ----------------------- -->
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>No Back Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div style="display: flex;flex-wrap: wrap; gap:8px">
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>3D Puff Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                                <!-- ----------------------- -->
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>No Side Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="estPrice">
+                                            <p>Estimated Price</p>
+                                            <h3>$24/ <span>per cap</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="points">
+                                    <ul>
+                                        <li>Add more items to save up-to $5 per item.</li>
+                                        <li>Price includes decoration.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="accorBottom">
+                                <div class="embBox" onclick="selectEmbBox(this)">
+                                    <div class="checkbox"></div>
+                                    <img src="images/standard.png" alt="">
+                                    <div class="embText">
+                                        <h3>Standard <br><span>Flat Embroidery</span></h3>
+                                        <p>This method is the most common embroidery type. It is what most customers choose and works well for smaller details and intricate designs.</p>
+                                    </div>
+                                </div>
+                                <div class="embBox" onclick="selectEmbBox(this)">
+                                    <div class="checkbox"></div>
+                                    <img src="images/3dpuff.png" alt="">
+                                    <div class="embText">
+                                        <h3>3D <br><span> Embroidery</span></h3>
+                                        <p>This method creates a raised look that makes the design pop off the panel of the hat. Only certain designs or larger blocky elements inside a design are able to be puffed.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="accordion-toggle"><h4><img src="images/bird.png" alt="bird">Logo <span>Placement & size</span></h4></button>
+                        <div class="accordion-content">
+
+                            <div class="accorBottom">
+                                <div class="logowrapper">
+                                    <div class="LogoBox" onclick="selectEmbBox(this)">
+                                        <div class="checkbox"></div>
+                                        <img src="images/logoRight.png" alt="">
+                                        <h3>Right <span>Eye</span></h3>
+                                    </div>
+                                    <div class="LogoBox" onclick="selectEmbBox(this)">
+                                        <div class="checkbox"></div>
+                                        <img src="images/logoCenter.png" alt="">
+                                        <h3>Centered <span>Eye</span></h3>
+                                    </div>
+                                    <div class="LogoBox" onclick="selectEmbBox(this)">
+                                        <div class="checkbox"></div>
+                                        <img src="images/logoLeft.png" alt="">
+                                        <h3>Left <span>Eye</span></h3>
+                                    </div>
+                                </div>
+
+                                <div class="logotext">
+                                    <div class="text">
+                                        <div class="Subtext">
+                                            <h5>Centered Designs</h5>
+                                            <p>Standard sizing for Centered designs is 2.3" tall and 4.2" wide (while keeping your designs proportions). The maximum embroidery field size is 6.3" wide by 2.3" tall.</p>
+                                        </div>
+                                        <div class="Subtext">
+                                            <h5>Offset Designs</h5>
+                                            <p>Maximum 2.3" tall and 3" wide. We will use the maximum space we can on the side panel (while keeping your designs proportions).</p>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <div class="Subtext">
+                                            <h5>Optional</h5>
+                                            <p>Use the Placement & Size Notes below to give us any specific sizing or
+                                                placement you may want.</p>
+                                        </div>
+                                        <div class="Subtext">
+                                            <h5>Note</h5>
+                                            <p>Placement can only change 1 time for every 6 or more hats ordered and
+                                                must stay the same size.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="logotextarea">
+                                    <textarea class="logotextareamain" name="" id="" placeholder="Placement and Size Notes"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <button class="accordion-toggle"><h4><img src="images/bird.png" alt="bird">Thread <span>Colors</span></h4></button>
+                        <div class="accordion-content">
+
+                            <div class="accorBottom">
+                                <div class="thread">
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color1.png" alt=""></div>
+                                        <div class="colortext">Black</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color2.png" alt=""></div>
+                                        <div class="colortext">White</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color3.png" alt=""></div>
+                                        <div class="colortext">Silver</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color4.png" alt=""></div>
+                                        <div class="colortext">Gray</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color5.png" alt=""></div>
+                                        <div class="colortext">Light Blue</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color6.png" alt=""></div>
+                                        <div class="colortext">Neon Blue</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color7.png" alt=""></div>
+                                        <div class="colortext">Blue</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color9.png" alt=""></div>
+                                        <div class="colortext">Navy</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color10.png" alt=""></div>
+                                        <div class="colortext">Purple</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color11.png" alt=""></div>
+                                        <div class="colortext">Neon Green</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color12.png" alt=""></div>
+                                        <div class="colortext">Green</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color13.png" alt=""></div>
+                                        <div class="colortext">Olive Green</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color14.png" alt=""></div>
+                                        <div class="colortext">Neon Yellow</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color15.png" alt=""></div>
+                                        <div class="colortext">Yellow</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color16.png" alt=""></div>
+                                        <div class="colortext">Neon Orange</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color17.png" alt=""></div>
+                                        <div class="colortext">Gold</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color18.png" alt=""></div>
+                                        <div class="colortext">Tan</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color19.png" alt=""></div>
+                                        <div class="colortext">Brown</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color20.png" alt=""></div>
+                                        <div class="colortext">Dark Brown</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/color21.png" alt=""></div>
+                                        <div class="colortext">Neon Pink</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/red.png" alt=""></div>
+                                        <div class="colortext">Red</div>
+                                    </div>
+                                    <div class="threadBox">
+                                        <div class="colorBox"><img src="images/silver.png" alt=""></div>
+                                        <div class="colortext">Black</div>
+                                    </div>
+                                </div>
+
+                                <div class="threadtext">
+                                    <div class="text">
+                                        <div class="Subtext">
+                                            <h5>These are the thread colors we use</h5>
+                                            <p>Designs can have up to 15 different colors in them. We recommend keeping designs to the fewest numbers of colors possible.</p>
+                                        </div>
+                                        <div class="Subtext">
+                                            <h5>Optional</h5>
+                                            <p>Let us know in the color notes below any specific colors you would like us to
+                                                use in your design.</p>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <div class="Subtext">
+                                            <h5>Note</h5>
+                                            <p>Use the Placement & Size Notes below to give us any specific sizing or
+                                                placement you may want.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="logotextarea">
+                                    <textarea class="logotextareamain" name="" id="" placeholder="Placement and Size Notes"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="accordion-toggle"><h4><img src="images/bird.png" alt="bird">Additional <span>Addons</span></h4></button>
+                        <div class="accordion-content">
+                            <div class="accorTop">
+                                <div class="additionTop">
+                                    <h3>Back & Side Stitching</h3>
+                                    <p>You can add back, left side and right side stitching to your hats. These locations can be additional small logos or text. Each separate location is an additional charge.</p>
+                                </div>
+                                <div class="select-quantity">
+                                    <h5>Items Price Calculator</h5>
+                                    <div class="quantityBox">
+                                        <div class="optFilter">
+
+                                            <div style="display: flex;flex-wrap: wrap; gap:8px; margin-bottom: 10px;">
+                                                <div class="quantity-container QuanCont">
+                                                    <span class="quantity-label">Quantity</span>
+                                                    <div class="quantity-controls">
+                                                        <button class="quantity-btn minus-btn">−</button>
+                                                        <input type="text" class="quantity-input" value="1" readonly>
+                                                        <button class="quantity-btn plus-btn">+</button>
+                                                    </div>
+                                                </div>
+                                                <!-- ----------------------- -->
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>No Back Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div style="display: flex;flex-wrap: wrap; gap:8px">
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>3D Puff Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                                <!-- ----------------------- -->
+                                                <div class="custom-select">
+                                                    <select>
+                                                        <option>No Side Embroidery</option>
+                                                        <option>Option 1</option>
+                                                        <option>Option 2</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="estPrice">
+                                            <p>Estimated Price</p>
+                                            <h3>$24/ <span>per cap</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="points">
+                                    <ul>
+                                        <li>Add more items to save up-to $5 per item.</li>
+                                        <li>Price includes decoration.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="accorBottom">
+                                <div class="logowrapper">
+                                    <div class="LogoBox" onclick="selectEmbBox(this)">
+                                        <div class="checkbox"></div>
+                                        <img src="images/leftSide.png" alt="">
+                                        <h3>Right Side <span>Eye</span></h3>
+                                    </div>
+                                    <div class="LogoBox" onclick="selectEmbBox(this)">
+                                        <div class="checkbox"></div>
+                                        <img src="images/backSide.png" alt="">
+                                        <h3>Back Side <span>Stitching</span></h3>
+                                    </div>
+                                    <div class="LogoBox" onclick="selectEmbBox(this)">
+                                        <div class="checkbox"></div>
+                                        <img src="images/rightSide.png" alt="">
+                                        <h3>Right Side <span>Stitching</span></h3>
+                                    </div>
+                                </div>
+
+                                <div class="Additionaltextarea">
+                                    <textarea class="Additionaltextareamain" name="" id="" placeholder="Placement and Size Notes"></textarea>
+                                    <div class="upload-container">
+                                        <div class="upload-btn-wrapper">
+                                          <button class="btn">Upload Your Logo</button>
+                                          <input type="file" id="fileInput" onchange="showFileName()">
+                                        </div>
+                                        <span class="file-name" id="fileName">No File Selected</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="accordion-toggle"><h4><img src="images/bird.png" alt="bird">General <span>Order Notes</span></h4></button>
+                        <div class="accordion-content">
+                            <div class="accorTop">
+                                <div class="additionTop">
+                                    <h3>Optional</h3>
+                                    <p>Please use this space to let us know any other special details about this order that you think we should know.</p>
+                                </div>
+                            </div>
+
+                            <div class="accorBottom">
+
+                                <div class="Generaltextarea">
+                                    <textarea class="Generaltextareamain" name="" id="" placeholder="Order here"></textarea>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                     <div id="checkout" class="content">Content for Checkout</div>
                 </div>
                 <button id="next">NEXT STEP</button>
