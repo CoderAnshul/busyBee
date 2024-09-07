@@ -1737,6 +1737,31 @@ h2 {
 
 
 @media(max-width: 480px) {
+    .uploadTop {
+        display: flex;
+        padding: 30px 10px;
+        align-items: center;
+        background: #F6F6F6;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .logo-wrapper {
+        flex-wrap: wrap;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .logo-container {
+        width: 140px;
+        height: 120px;
+        border: 2px dashed #ddd;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: border-color 0.3s ease;
+    }
     html,body{
         background-color: #ECECEC;
     }
