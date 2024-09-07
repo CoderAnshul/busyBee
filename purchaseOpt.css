@@ -1065,7 +1065,6 @@ h2 {
     min-height: 100px;
     padding: 10px 0px;
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(93px, 1fr)); */
     grid-template-columns: repeat(11, 1fr);
     overflow-x: scroll;
     overflow-y: hidden; 
