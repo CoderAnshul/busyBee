@@ -306,3 +306,57 @@ function previewImage(file) {
         firstTimeRadio.addEventListener('change', updateContent);
     });
 
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const thread = document.querySelector('.thread');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+    
+        thread.addEventListener('mousedown', (e) => {
+            isDown = true;
+            thread.classList.add('active');
+            startX = e.pageX - thread.offsetLeft;
+            scrollLeft = thread.scrollLeft;
+        });
+    
+        thread.addEventListener('mouseleave', () => {
+            isDown = false;
+            thread.classList.remove('active');
+        });
+    
+        thread.addEventListener('mouseup', () => {
+            isDown = false;
+            thread.classList.remove('active');
+        });
+    
+        thread.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - thread.offsetLeft;
+            const walk = (x - startX) * 2; // Adjust scroll speed here
+            thread.scrollLeft = scrollLeft - walk;
+        });
+    
+        // Touch events for mobile
+        thread.addEventListener('touchstart', (e) => {
+            isDown = true;
+            startX = e.touches[0].pageX - thread.offsetLeft;
+            scrollLeft = thread.scrollLeft;
+        });
+    
+        thread.addEventListener('touchend', () => {
+            isDown = false;
+        });
+    
+        thread.addEventListener('touchmove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.touches[0].pageX - thread.offsetLeft;
+            const walk = (x - startX) * 2; // Adjust scroll speed here
+            thread.scrollLeft = scrollLeft - walk;
+        });
+    });
+    

@@ -6,7 +6,7 @@
 
 }
 ::-webkit-scrollbar{
-    display: none;
+    opacity: 0;
 }
 a{
   text-decoration: none;
@@ -1065,7 +1065,10 @@ h2 {
     min-height: 100px;
     padding: 10px 0px;
     display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(93px, 1fr)); */
     grid-template-columns: repeat(11, 1fr);
+    overflow-x: scroll;
+    overflow-y: hidden; 
     grid-gap: 10px;
     justify-items: center;
 }
@@ -2283,6 +2286,7 @@ h2 {
 }
 
 @media(min-width:1025px) and (max-width:1270px){
+    
     /* .product-des .right{
         h2{
            white-space: nowrap;
