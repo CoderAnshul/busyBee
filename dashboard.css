@@ -1,0 +1,935 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+::-webkit-scrollbar{
+    opacity: 0;
+}
+a{
+  text-decoration: none;
+}
+a, li {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+ul, li{
+    text-decoration: none;
+    list-style: none;
+}
+.navActive{
+  border: 1.5px solid #D07531;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    min-width: 380px;
+}
+
+.navbar{
+    height: 112px;
+    width: 100%;
+    /* background: #b6b6b6; */
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+}
+.navbar li{
+  cursor: pointer;
+}
+.small{
+    display: none;
+}
+.ham{
+    height: 20px;
+    display: none;
+}
+.center-nav{
+    width: 60%;
+    height: 100%;
+    /* background-color: rgb(167, 116, 116); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10vw;
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        max-width: 350px;
+        li{
+            color: #303030;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 18px;
+            white-space: nowrap;
+        }
+    }
+}
+.center-nav img{
+    height: 95px;
+    width: auto;
+}
+.nav-end{
+    width: 10%;
+    height: 100%;
+    padding-left: 2vw;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+}
+
+.dashboardMain{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ECECEC;
+    padding: 40px 0px;
+    
+}
+.dashcontMain{
+    width: 75%;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.dashtabs {
+    max-width: 355px;
+    white-space: nowrap;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.dashtab {
+    padding: 6px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    color: gray;
+    position: relative;
+}
+
+.dashtab.active {
+    color: black;
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: orange;
+    transition: left 0.3s ease, width 0.3s ease;
+}
+
+.dashtab-content {
+    display: none;
+    padding: 20px;
+}
+
+.dashtab-content.active {
+    display: block;
+}
+
+
+.dashProfile{
+    width: 100%;
+    min-height: 200px;
+    background-color: white;
+    border-radius: 10px;
+}
+.profile-container {
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    p{
+        font-size: 12px;
+        width: 30%;
+    }
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    
+}
+
+.profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-details {
+    margin-left: 20px;
+}
+
+.profile-details h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.profile-details h2 span {
+    font-family: "kaisei Decol", serif;
+    font-weight: 200;
+}
+
+.profile-details p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 12px;
+}
+
+.edit-profile a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+.edit-profile a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+/* -------------- recent orders ------------------ */
+.recentordertable{
+    overflow-x: scroll;
+}
+
+
+.dashrecentOrder{
+    width: 100%;
+    min-height: 400px;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.orders-container {
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.orders-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.orders-header h2 span {
+    font-weight: normal;
+    font-family: "kaisei Decol", serif;
+    font-weight: 200;
+}
+
+.orders-header a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #000000;
+    display: flex;
+    white-space: nowrap;
+
+}
+.orderImg img{
+    height: 70%;
+    object-fit: contain;
+    border: 1.5px solid rgba(0, 0, 0, 0.178);
+}
+
+.orders-table {
+    min-width: 999px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.orders-table th, .orders-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.orders-table td{
+    font-size: 12px;
+}
+
+.orders-table th {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.orders-table .order-item {
+    display: flex;
+    align-items: center;
+}
+
+.orders-table .order-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.orders-table .order-item div {
+    display: flex;
+    flex-direction: column;
+}
+
+.orders-table .order-item h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.orders-table .order-item p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.status.confirmed {
+    border:1.5px solid #388e3c;
+    color: #388e3c;
+}
+
+.status.pending {
+    border:1.5px solid #f57c00;
+    color: #f57c00;
+}
+
+.status.completed {
+    border:1.5px solid #1976d2;
+    color: #1976d2;
+}
+
+/* ----------------additional payment ------------------- */
+.addPayWrapper{
+    overflow-x: scroll;
+}
+.additionalPayment{
+    width: 100%;
+    min-height: 400px;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 20px;
+    span{
+        font-family: "kaisei Decol", serif;
+        font-weight: 200;
+    }
+}
+p.subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.additionalPayment table {
+    width: 1082px;
+    border-collapse: collapse;
+    background-color: white;
+    
+}
+.additionalPayment th, td {
+    padding: 15px;
+    text-align: left;
+}
+.additionalPayment td {
+    padding: 15px;
+    text-align: left;
+    font-size: 12px;
+}
+.additionalPayment th {
+    color: #333;
+    font-weight: bold;
+}
+.additionalPayment td {
+    border-bottom: 1px solid #eee;
+}
+.action-button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #333;
+    color: #333;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.action-button:hover {
+    background-color: #f0f0f0;
+}
+.highlight {
+    background-color: #FFA500;
+    color: white;
+    border-color: #FFA500;
+}
+.highlight:hover {
+    background-color: #ff9500;
+}
+.right {
+    text-align: right;
+}
+
+/* --------------------- dashMyadd------------------ */
+.dashAddHeading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button{
+        border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        img{
+            height: 20px;
+            margin-right: 5px;
+        }
+    }
+}
+.dashMyAdd{
+    width: 100%;
+    min-height: 200px;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 20px;
+    span{
+        font-family: "kaisei Decol", serif;
+        font-weight: 200;
+    }
+}
+.dashMyAddcontainer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.address-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.address-box {
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.address-box h2 {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.address-box p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+.edit-address {
+    text-align: right;
+    margin-top: -40px;
+}
+.edit-address button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.edit-address button img {
+    width: 18px;
+    margin-right: 8px;
+}
+.edit-address button:hover {
+    color: #FFA500;
+}
+
+/* --------------------- my orders tabl content -------------------------- */
+.order-table-div{
+    overflow-x: scroll;
+}
+
+#orders{
+    max-width: 1100px;
+    min-height: 100vh;
+    background-color: #F6F6F6;
+    margin-top: 20px;
+    span{
+        font-family: "kaisei Decol", serif;
+        font-weight: 200;
+    }
+}
+.order-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    width: 1060px;
+}
+.order-history-table th, .order-history-table td {
+    padding: 15px;
+    text-align: left;
+}
+.order-history-table th {
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+}
+.order-history-table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 12px;
+}
+.order-history-table th {
+    color: #333;
+    font-weight: bold;
+}
+.order-history-table td {
+    border-bottom: 1px solid #00000028;
+}
+.order-item-info {
+    display: flex;
+    align-items: center;
+}
+.order-item-img{
+    width: 60px;
+    border: 1.5px solid rgba(0, 0, 0, 0.164);
+    border-radius: 5px;
+    padding-left: 4px;
+    margin-right: 8px;
+}
+.order-item-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.order-status-button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+.order-status-confirmed {
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+.order-status-shipping {
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+
+.orderpagination {
+    display: flex;
+    align-items: center;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.arrow {
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    color: #333333c9;
+}
+
+
+
+/* -------------------- address ---------------------- */
+#addresses{
+    max-width: 1100px;
+    min-height: 100vh;
+    background-color: #F6F6F6;
+    margin-top: 20px;
+    span{
+        font-family: "kaisei Decol", serif;
+        font-weight: 200;
+    }
+}
+.billing-container {
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.billing-container h2 {
+    margin-bottom: 16px;
+    text-align: center;
+    span{
+        font-family: "kaisei Decol", serif;
+        font-weight: 200;
+    }
+}
+
+.billing-container form {
+    margin-bottom: 20px;
+}
+
+.billing-container .form-row {
+    display: flex;
+    margin-bottom: 0px;
+    gap: 20px;
+}
+
+.billing-container input[type="text"], select {
+    width: 48%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.billing-container input{
+    height: 50px;
+}
+.billing-container select{
+    height: 50px;
+}
+
+.billing-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.billing-container .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.billing-container input[type="text"], select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.billing-container .checkbox label {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+
+.shipping-container {
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.shipping-container h2 {
+    margin-bottom: 16px;
+    text-align: center;
+    span{
+        font-family: "kaisei Decol", serif;
+        font-weight: 200;
+    }
+}
+
+.shipping-container form {
+    margin-bottom: 20px;
+}
+
+.shipping-container .form-row {
+    display: flex;
+    margin-bottom: 0px;
+    gap: 20px;
+}
+
+.shipping-container input[type="text"], select {
+    width: 48%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.shipping-container input{
+    height: 50px;
+}
+.shipping-container select{
+    height: 50px;
+}
+
+.shipping-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.shipping-container .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.shipping-container input[type="text"], select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.shipping-container .checkbox label {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 480px) {
+    .navbar{
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 40px;
+        height: 100px;
+    }
+    #toggle{
+        gap: 20px!important;
+    }
+    .ham{
+        display: block;
+    }
+    .center-nav{
+        display: none;
+    }
+    .navbar .small{
+        display: block;
+        height:70px;
+    }
+    .dashcontMain{
+        width: 98%;
+        height: 100%;
+        margin: 0 auto;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+    }
+    .profile-container {
+        p{
+            font-size: 12px;
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+    .edit-profile a {
+        margin-top: 10px;
+        
+    }
+}
+
+@media(min-width: 481px) and (max-width:768px) {
+    .navbar{
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 40px;
+        height: 100px;
+    }
+    .center-nav{
+        display: none;
+    }
+    .ham{
+        display: block;
+    }
+    .navbar .small{
+        display: block;
+        height:70px;
+    }
+    .dashcontMain{
+        width: 98%;
+        height: 100%;
+        margin: 0 auto;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+    }
+    .profile-container {
+        p{
+            font-size: 12px;
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+    .edit-profile a {
+        margin-top: 10px;
+        
+    }
+}
+
+@media(min-width: 769px) and (max-width:1024px) {
+    .navbar{
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 40px;
+        height: 100px;
+    }
+    .center-nav{
+        display: none;
+    }
+    .ham{
+        display: block;
+    }
+    .navbar .small{
+        display: block;
+        height:70px;
+    }
+}
+
+@media(min-width: 1025px) and (max-width:1270px) {
+    .inputFields{
+        min-height: 22vh;
+        width: 800px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        button{
+            height: 90px;
+            width: 20%;
+            margin-top: -14px;
+            border-radius: 10px;
+            border: none;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: white;
+            background: #DD9F44;
+            img{
+                height: 20px;
+            }
+        }
+      }
+      .navbar{
+        height: 112px;
+        width: 100%;
+        /* background: #b6b6b6; */
+        display: flex;
+        gap: 2vw;
+        justify-content: center;
+    }
+    .center-nav{
+        width: 70%;
+        height: 100%;
+        /* background-color: rgb(167, 116, 116); */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 5vw;
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            max-width: 350px;
+            li{
+                color: #303030;
+                font-size: 14px;
+                font-weight: 500;
+                padding: 8px 18px;
+                white-space: nowrap;
+            }
+        }
+    }
+    .center-nav img{
+        height: 95px;
+        width: auto;
+    }
+    .nav-end{
+        width: 10%;
+        height: 100%;
+        padding-left: 2vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
