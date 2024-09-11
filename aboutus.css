@@ -54,27 +54,28 @@ html, body{
     display: none;
 }
 .center-nav{
-    width: 60%;
-    max-width: 900px;
-    height: 100%;
-    /* background-color: rgb(167, 116, 116); */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 10vw;
-    ul{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        max-width: 350px;
-        li{
-            color: #303030;
-            font-size: 14px;
-            font-weight: 500;
-            padding: 8px 18px;
-            white-space: nowrap;
-        }
-    }
+  width: 60%;
+  max-width: 900px;
+  height: 100%;
+  /* background-color: rgb(167, 116, 116); */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin-left: 10vw;
+  gap: 30px;
+  ul{
+      width: 100%;
+      display: flex;
+      /* justify-content: space-between; */
+      max-width: 350px;
+      li{
+          color: #303030;
+          font-size: 14px;
+          font-weight: 500;
+          padding: 8px 18px;
+          white-space: nowrap;
+      }
+  }
 }
 .center-nav img{
     height: 95px;

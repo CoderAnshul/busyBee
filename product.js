@@ -191,20 +191,22 @@ function renderProducts(products, page) {
             prodBox.className = 'prodBox';
 
             prodBox.innerHTML = `
-                <div class="prod-image">
-                    <a href="#"><img src="images/wishlist.png" alt=""></a>
-                    <img src="${product.prodImage}" alt="">
+                <a href="productDes.html">
+            <div class="prod-image">
+                <a href=""><img src="images/wishlist.png" alt=""></a>
+                <img src="${product.prodImage}" alt="">
+            </div>
+            <div class="prod-content">
+                <p>${product.prodName}</p>
+                <div class="price">
+                    <h5 id="offerPrice">${product.offerPrice}</h5>
+                    <h5 id="oldPrice">${product.oldPrice}</h5>
                 </div>
-                <div class="prod-content">
-                    <p>${product.prodName}</p>
-                    <div class="price">
-                        <h5 id="offerPrice">${product.offerPrice}</h5>
-                        <h5 id="oldPrice">${product.oldPrice}</h5>
-                    </div>
-                    <div class="color-choice">
-                        ${product.colors.map(color => `<div class="color" style="background-color: ${color};"></div>`).join('')}
-                    </div>
+                <div class="color-choice">
+                    ${product.colors.map(color => `<div class="color" style="background-color: ${color};"></div>`).join('')}
                 </div>
+            </div>
+        </a>
             `;
 
             container.appendChild(prodBox);
