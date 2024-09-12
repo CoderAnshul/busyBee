@@ -2123,6 +2123,14 @@ button.btn-place-order:hover {
 
 
 @media(max-width: 480px) {
+        .x-scroll{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        overflow-x: scroll;
+        justify-content: start;
+    }
     .form-container {
         width: 100%;
         max-width: 1000px;
