@@ -2130,6 +2130,7 @@ button.btn-place-order:hover {
         gap: 20px;
         overflow-x: scroll;
         justify-content: start;
+        background: #000;
     }
     .form-container {
         width: 100%;
