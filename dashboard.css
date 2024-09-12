@@ -950,6 +950,50 @@ p.subtitle {
       }
 
       /* ------------------- Explore ends ----------------------- */
+      /* ------------------- Footer starts --------------- */
+
+            .footer{
+                padding: 40px 0px 100px 0px;
+            }
+            .footer-cont{
+                width: 95%;
+                p{
+                    width: 85%;
+                }
+              }
+              .sub{
+                width:350px;
+                border: 1.5px solid rgb(179, 179, 179);
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 50px;
+                margin-bottom: 60px;
+                input{
+                    background: transparent;
+                    border: none;
+                    padding-left: 20px;
+                    width: 100%;
+                }
+                button{
+                    padding: 15px 40px;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    color: white;
+                    background-color: #DD9F44;
+                    border-radius: 30px;
+                    white-space:nowrap;
+                }
+              }
+              .footer-bottom{
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                p{
+                    text-align: center;
+                }
+              }
 }
 
 @media(min-width: 481px) and (max-width:768px) {

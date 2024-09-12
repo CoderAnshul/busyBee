@@ -193,7 +193,6 @@ function renderProducts(products, page) {
             prodBox.innerHTML = `
                 <a href="productDes.html">
             <div class="prod-image">
-                <a href=""><img src="images/wishlist.png" alt=""></a>
                 <img src="${product.prodImage}" alt="">
             </div>
             <div class="prod-content">
