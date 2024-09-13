@@ -813,9 +813,33 @@ input[type=range]::-moz-range-thumb {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.sort{
+  width: 100%;
+}
+.top-section div:nth-child(3) select{
+  height: 35px;
+  width: 150px;
+  margin-top: 10px;
+  border-radius: 40px;
+  outline: none;
+  position: absolute!important;
+  right: 0;
+}
 }
 
 @media(min-width: 481px) and (max-width:768px) {
+  .sort{
+    width: 100%;
+  }
+  .top-section div:nth-child(3) select{
+    height: 35px;
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 40px;
+    outline: none;
+    position: absolute!important;
+    right: 0;
+  }
     .navbar{
         align-items: center;
         justify-content: space-between;

@@ -196,6 +196,9 @@ html, body{
     align-items: center;
     justify-content: center;
   }
+  /* .filterToggle select{
+    padding: 0px!important;
+  } */
   select{
     width: 100%;
     padding: 10px 30px;
@@ -282,7 +285,7 @@ html, body{
     margin-top: 10px;
     border-radius: 40px;
     outline: none;
-
+    padding: 0px 10px;
 }
 
 .wrapper{
@@ -721,6 +724,7 @@ input[type=range]::-moz-range-thumb {
         flex-direction: column;
         gap: 5px;
       }
+    
       .category-item:nth-child(1) img{
         margin-top: 2px;
         scale: 1.2;
@@ -797,6 +801,7 @@ input[type=range]::-moz-range-thumb {
         margin-bottom: 15px;
         text-align: center;
     }
+    
     .top-section div:nth-child(2){
       font-size: 36px;
       font-weight: 600;
