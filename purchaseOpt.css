@@ -2123,6 +2123,12 @@ button.btn-place-order:hover {
 
 
 @media(max-width: 480px) {
+    .qty-control input {
+        width: 50px;
+        text-align: center;
+        border: none;
+        background-color: #fff;
+    }
     .x-scroll{
         height: 100%;
         width: 100%;
@@ -2370,6 +2376,12 @@ button.btn-place-order:hover {
 
 
 @media(min-width: 481px) and (max-width:768px)  {
+    .qty-control input {
+        width: 50px;
+        text-align: center;
+        border: none;
+        background-color: #fff;
+    }
     .embBox{
         width: 100%;
       }
@@ -2570,6 +2582,12 @@ button.btn-place-order:hover {
 }
 
 @media(min-width: 769px) and (max-width:1024px)  {
+    .qty-control input {
+        width: 50px;
+        text-align: center;
+        border: none;
+        background-color: #fff;
+    }
     html,body{
         background-color: #ECECEC;
     }
@@ -2710,6 +2728,12 @@ button.btn-place-order:hover {
 }
 
 @media(min-width:1025px) and (max-width:1270px){
+    .qty-control input {
+        width: 50px;
+        text-align: center;
+        border: none;
+        background-color: #fff;
+    }
     
     /* .product-des .right{
         h2{
